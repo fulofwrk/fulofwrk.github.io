@@ -55,6 +55,12 @@
     </li>
     {% endif %}
 
+    {% if sidebar.gitbook %}
+    <li class="gitbook"><i class="fab fa-gitbook"></i>
+      <a href="https://{{ sidebar.github }}.gitbook.io/{{ sidebar.gitbook }}" target="_blank">{{ sidebar.gitbook }}</a>
+    </li>
+    {% endif %}
+
     {% if sidebar.gitlab %}
     <li class="gitlab"><i class="fab fa-gitlab"></i>
       <a href="https://gitlab.com/{{ sidebar.gitlab }}" target="_blank">{{ sidebar.gitlab }}</a>
